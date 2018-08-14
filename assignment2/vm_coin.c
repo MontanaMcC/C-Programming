@@ -1,0 +1,38 @@
+/******************************************************************************
+** Student name: 	Montana McCallum
+** Student number: 	s3645635
+** Course: 			Advanced Programming Techniques - S1 2018
+******************************************************************************/
+
+#include "vm_coin.h"
+
+/**
+ * Implement functions here for managing coins and the
+ * "cash register" contained in the VmSystem struct.
+ **/
+
+/**
+ * Some example functions:
+ * init coins array, insert coin, change coin count for Denomination,
+ * convert Denomination to coin value, deducting coins from register, etc...
+ */
+
+void initCoinsArray() {
+
+}
+
+void insertCoin() {
+
+}
+
+void changeCoinCount() {
+
+}
+
+void convertDenom() {
+    
+}
+
+void deductFromRegister() {
+
+}

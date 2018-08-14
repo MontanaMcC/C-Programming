@@ -1,0 +1,25 @@
+valgrind --track-origins=yes ./vm stock.dat coins.dat
+==781== Process terminating with default action of signal 2 (SIGINT)
+==781==    at 0x4F1F7E0: __read_nocancel (syscall-template.S:81)
+==781==    by 0x4EAD5DF: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:612)
+==781==    by 0x4EAE56D: _IO_default_uflow (genops.c:436)
+==781==    by 0x4EA2513: _IO_getline_info (iogetline.c:69)
+==781==    by 0x4EA1415: fgets (iofgets.c:56)
+==781==    by 0x400E48: getMenuChoice (vm_menu.c:82)
+==781==    by 0x400BED: mainMenu (vm_menu.c:37)
+==781==    by 0x400B17: main (vm.c:24)
+==781==
+==781== HEAP SUMMARY:
+==781==     in use at exit: 1,764 bytes in 12 blocks
+==781==   total heap usage: 13 allocs, 1 frees, 2,332 bytes allocated
+==781==
+==781== LEAK SUMMARY:
+==781==    definitely lost: 0 bytes in 0 blocks
+==781==    indirectly lost: 0 bytes in 0 blocks
+==781==      possibly lost: 0 bytes in 0 blocks
+==781==    still reachable: 1,764 bytes in 12 blocks
+==781==         suppressed: 0 bytes in 0 blocks
+==781== Rerun with --leak-check=full to see details of leaked memory
+==781==
+==781== For counts of detected and suppressed errors, rerun with: -v
+==781== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
